@@ -100,8 +100,8 @@ logger.debug('metrics created')
 
 def main():
     try:
-        path = 'C:/Users/acer/OneDrive/Desktop/mloops/sentiment-detection/data/interim/tfidf_test.csv'
-        path2 = 'C:/Users/acer/OneDrive/Desktop/mloops/sentiment-detection/data/interim/y_test.csv'
+        path = 'data/interim/tfidf_test.csv'
+        path2 = 'data/interim/y_test.csv'
         model_path = 'model.pkl'
         tfidf_test, rf_model, y_test, y_pred = read_data(path, model_path, path2)
         
