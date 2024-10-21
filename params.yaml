@@ -1,0 +1,17 @@
+data_ingestion:
+  pages: 2
+  page_size: 100
+
+feature_engineering:
+  test_size: 0.4
+  random_state: 42
+  max_df: 0.7
+  max_features: 100000
+  min_df: 0.01
+  stop_words: 'english'
+  use_idf: True
+
+model_training:
+  n_estimators: 100
+
+

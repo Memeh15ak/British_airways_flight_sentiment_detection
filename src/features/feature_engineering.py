@@ -130,7 +130,7 @@ logger.debug('data stored succesfully')
 
 def main():
     try:
-        path = 'C:/Users/acer/OneDrive/Desktop/mloops/sentiment-detection/data/processed/processed_data.csv'
+        path = 'data/processed/processed_data.csv'
         df_new = load_data(path)
         
         new_path = 'params.yaml'
@@ -142,7 +142,7 @@ def main():
             max_df, max_features, min_df, stop_words, use_idf, X_train, X_test, y_train, y_test
         )
         
-        data_path = 'C:/Users/acer/OneDrive/Desktop/mloops/sentiment-detection/data/interim'
+        data_path = 'data/interim'
         store_data(data_path, tfidf_df_train, tfidf_df_test, y_test)
     
     except Exception as e:
